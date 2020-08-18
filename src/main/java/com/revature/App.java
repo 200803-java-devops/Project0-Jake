@@ -1,14 +1,14 @@
 package com.revature;
 
+import java.sql.Connection;
+import java.sql.SQLException;;
+
 public class App {
-    public static void main(String[] args)
-    {
-        int port = Integer.parseInt(System.getProperty("port", "8080"));
-        Server server = new Server(port);
-        server.addController("/health", (request, response) ->
-        {   response.setStatus("200 OK");
-            response.setBody("Server OK".getBytes());
-        });
-        server.listen();
+    public static void main(String[] args) throws SQLException
+    {   DBConnect test = new DBConnect();
+        Connection c = test.getConnect();
+        System.out.println(c);
+        book newList = new book();
+        newList.bookStart();
     }
-}
+} 

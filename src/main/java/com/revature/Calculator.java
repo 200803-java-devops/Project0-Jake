@@ -16,7 +16,7 @@ public class Calculator {
         {   n2 = this.pown(n2, n);
             n2 /= n;
             n1 = this.pown(n1, n);
-            n2 /= n;
+            n1 /= n;
         } catch (ArithmeticException e)
         {   System.out.println("Error: division by 0 has occurred. result is undefined.");  }
         n2 -= n1;
@@ -28,7 +28,7 @@ public class Calculator {
         n2 = Math.abs(n2);
         n1 = this.log2(n1);
         n2 = this.log2(n2);
-        n2 -= n1;
+        n2 = n1 - n2;
         return n2;
     }
 
@@ -52,13 +52,13 @@ public class Calculator {
     public double Integral6(double n1, double n2)
     {   n1 = this.cos2(n1);
         n2 = this.cos2(n2);
-        return n2 - n1;
+        return n1 - n2;
     }
 
     public double Integral7(double n1, double n2)
     {   n1 = this.sin2(n1);
         n2 = this.sin2(n2);
-        return n1 - n2;
+        return n2 - n1;
     }
 
     public double Integral8(double n1, double n2)
@@ -135,8 +135,8 @@ public class Calculator {
             temp3 = 1 / temp3;
         }   catch (ArithmeticException e)
         {   System.out.println("Division by 0 has occurred");   }
-        n1 = Math.abs(temp1 - temp2);
-        n2 = Math.abs(temp3 - temp4);
+        n1 = Math.abs(temp1 + temp2);
+        n2 = Math.abs(temp3 + temp4);
         n1 = this.log2(n1);
         n2 = this.log2(n2);
         return n2 - n1;
