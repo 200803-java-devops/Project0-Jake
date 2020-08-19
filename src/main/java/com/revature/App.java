@@ -1,11 +1,23 @@
 package com.revature;
 
 import java.sql.Connection;
-import java.sql.SQLException;;
+import java.sql.SQLException;
+
+/**
+ * Integral Database App Jake Hernandez 08/19/2020
+ * This app will allow a user to input an integral
+ * or look up integrals by index to give back 
+ * documented solution to it. This app also gives 
+ * the user the option to summon the inbuilt
+ * calculator for a numerical answer to a specific
+ * integral once the user inputs a lower and upper
+ * value.
+ */
 
 public class App {
     public static void main(String[] args) throws SQLException
-    {   DBConnect test = new DBConnect();
+    {   new Time();
+        DBConnect test = new DBConnect();
         Connection c = test.getConnect();
         System.out.println(c);
         book newList = new book();

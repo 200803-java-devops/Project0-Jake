@@ -2,6 +2,8 @@ package com.revature;
 
 import java.lang.Math;
 
+//This class is where all the calculations reside for each numbered integral
+
 public class Calculator {
 
     public double Integral1(double a, double n1, double n2)

@@ -2,6 +2,8 @@ package com.revature;
 
 import java.sql.*;
 
+//Used to access database for app
+
 public class DBConnect {
     static final String URL = "jdbc:postgresql://localhost:5431/Integrals";
     static final String USER = "Integrals";
@@ -15,12 +17,12 @@ public class DBConnect {
             {   Class.forName("org.postgresql.Driver");
                 c = DriverManager.getConnection(URL, USER, PASS);
                 System.out.println("Connection Successful");
-            }   catch (SQLException se)
+            }   catch (SQLException sqlException)
             {   System.out.println("Connection to SQL database failed");
-                se.printStackTrace();
-            }   catch (Exception e)
+                sqlException.printStackTrace();
+            }   catch (Exception stackException)
             {   System.out.println("Could not load driver");
-                e.printStackTrace();
+                stackException.printStackTrace();
             }
         }
         return c;

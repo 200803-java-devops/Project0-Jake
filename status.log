@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-08-19T13:36:40.189386900Z</date>
+  <millis>1597844200189</millis>
+  <nanos>386900</nanos>
+  <sequence>0</sequence>
+  <logger>com.revature.Time</logger>
+  <level>INFO</level>
+  <class>com.revature.Time$ScheduleTask</class>
+  <method>run</method>
+  <thread>14</thread>
+  <message>08:36:40.182395300 Program Running</message>
+</record>
+</log>

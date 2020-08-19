@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+//Used to access database for Driver
+
 public class ConnectionUtil {
     public static final String username = "Integrals";
     private static final String password = "hello";

@@ -3,6 +3,9 @@ package com.revature;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
+//Used to test all calculator calculation methods for
+//accuracy in method invocations. 
+
 public class UnitTests 
 {   
     @Test
